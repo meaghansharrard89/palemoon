@@ -14,15 +14,50 @@
 }
 
 body {
-  background-color: "background";
+  background-color: #042971;
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  color: white;
 }
 
 .top-shadow {
   box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1),
     0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+#one {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#image {
+  flex-grow: 1;
+}
+
+#two {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#three {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#four {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#five {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .image-container {
