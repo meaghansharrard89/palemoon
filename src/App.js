@@ -84,7 +84,7 @@ const App = () => {
         className={`h-screen flex justify-center items-center text-center ${sectionBackgrounds[0]}`}
       >
         <RevealOnScroll>
-          <div className="mx-4">
+          <div className="p-4">
             <img
               src="https://i.ibb.co/RgBQKph/image1.jpg"
               className="mx-auto px-4 mb-8 fade-in w-108 h-108 rounded-full"
