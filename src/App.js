@@ -61,9 +61,14 @@ const RevealOnScroll = ({ children }) => {
 };
 
 const App = () => {
+  const sectionBackgrounds = ["bg-blue-600", "bg-blue-800"];
+
   return (
-    <div className="container mx-auto text-center items-center">
-      <div id="one" className="h-screen flex justify-center items-center">
+    <div>
+      <div
+        id="one"
+        className={`h-screen flex justify-center items-center ${sectionBackgrounds[1]}`}
+      >
         <RevealOnScroll>
           <img
             src="https://i.ibb.co/35XRn1R/Untitled-design-2.png"
@@ -72,19 +77,16 @@ const App = () => {
           />
         </RevealOnScroll>
       </div>
-      {/* <div id="two" className="h-screen flex justify-center items-center">
-        <RevealOnScroll>
-          <img src="https://i.ibb.co/RgBQKph/image1.jpg" id="image1" />
-          <br />
-          <img src="https://i.ibb.co/3YtHVb5/image2.jpg" id="image2" />
-        </RevealOnScroll>
-      </div> */}
       <div
-        id="three"
-        className="h-screen flex flex-col justify-center items-center"
+        id="two"
+        className={`h-screen flex justify-center items-center text-center ${sectionBackgrounds[0]}`}
       >
         <RevealOnScroll>
           <div className="p-6 md:p-10">
+            <img
+              src="https://i.ibb.co/RgBQKph/image1.jpg"
+              className="mx-auto"
+            />
             <p className="text-3xl mt-10" id="about">
               Welcome to Pale Moon Brewing in Arcata, CA! <br /> <br />
               Crafting quality brews in the heart of Arcata, Pale Moon Brewing
@@ -98,15 +100,22 @@ const App = () => {
         </RevealOnScroll>
       </div>
       <div
-        id="four"
-        className="h-screen flex flex-col justify-center items-center"
+        id="three"
+        className={`h-screen flex justify-center items-center text-center ${sectionBackgrounds[1]}`}
       >
         <RevealOnScroll>
           <div className="p-4 md:p-10">
-            {/* <p className="text-3xl mt-10">600 F St suite 7, Arcata, CA 95521</p> */}
-            <br />
             <Map />
-            <p className="text-3xl mt-10">600 F St suite 7, Arcata, CA 95521</p>
+            <p className="text-3xl mt-10">600 F St Suite 7, Arcata, CA 95521</p>
+          </div>
+        </RevealOnScroll>
+      </div>
+      <div
+        id="four"
+        className={`h-screen flex justify-center items-center text-center ${sectionBackgrounds[0]}`}
+      >
+        <RevealOnScroll>
+          <div className="p-4 md:p-10">
             <p className="text-3xl mt-10">
               Monday: Closed
               <br />
@@ -127,7 +136,7 @@ const App = () => {
       </div>
       <div
         id="five"
-        className="h-screen flex flex-col justify-center items-center"
+        className={`h-screen flex justify-center items-center text-center ${sectionBackgrounds[1]}`}
       >
         <RevealOnScroll>
           <div className="p-4 md:p-10">
