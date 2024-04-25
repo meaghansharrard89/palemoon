@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/palemoon/static/css/main.3b776680.css",
+    "main.js": "/palemoon/static/js/main.78701452.js",
+    "index.html": "/palemoon/index.html",
+    "main.3b776680.css.map": "/palemoon/static/css/main.3b776680.css.map",
+    "main.78701452.js.map": "/palemoon/static/js/main.78701452.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3b776680.css",
+    "static/js/main.78701452.js"
+  ]
+}
