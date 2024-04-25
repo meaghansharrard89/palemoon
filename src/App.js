@@ -64,7 +64,7 @@ const App = () => {
 
   return (
     <>
-      {/* Logo- section 1 */}
+      {/* Logo */}
       <div
         id="one"
         className={`h-screen flex justify-center items-center text-center ${sectionBackgrounds[1]}`}
@@ -78,7 +78,7 @@ const App = () => {
         </RevealOnScroll>
       </div>
 
-      {/* Image and about- section 2 */}
+      {/* Image and about */}
       <div
         id="two"
         className={`h-screen flex justify-center items-center text-center ${sectionBackgrounds[0]}`}
@@ -105,7 +105,7 @@ const App = () => {
         </RevealOnScroll>
       </div>
 
-      {/* Map- section 3 */}
+      {/* Map and address */}
       <div
         id="three"
         className={`h-screen flex justify-center items-center text-center ${sectionBackgrounds[1]}`}
@@ -120,14 +120,14 @@ const App = () => {
         </RevealOnScroll>
       </div>
 
-      {/* Hours- section 4 */}
+      {/* Hours */}
       <div
         id="four"
         className={`h-screen flex justify-center items-center text-center ${sectionBackgrounds[0]}`}
       >
         <RevealOnScroll>
           <div className="p-4">
-            <p className="text-2xl mt-10 md:text-1xl lg:text-2xl">
+            <p className="text-2xl mt-10 md:text-2xl lg:text-3xl">
               Monday: Closed
               <br />
               Tuesday: Closed
@@ -146,7 +146,7 @@ const App = () => {
         </RevealOnScroll>
       </div>
 
-      {/* Contact- section 5 */}
+      {/* Contact */}
       <div
         id="five"
         className={`h-screen flex justify-center items-center text-center ${sectionBackgrounds[1]}`}
@@ -213,6 +213,14 @@ const App = () => {
             </p>
           </div>
         </RevealOnScroll>
+      </div>
+
+      {/* Footer */}
+      <div className={`flex flex-wrap ${sectionBackgrounds[0]}`}>
+        <div className="w-full lg:w-2/5"></div>
+        <div className="mt-6 mb-6 w-full md:w-1/2 lg:w-1/5 text-center pb-2 text-sm">
+          @ Meaghan Sharrard 2024
+        </div>
       </div>
     </>
   );

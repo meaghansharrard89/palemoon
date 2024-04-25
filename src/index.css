@@ -35,8 +35,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  overflow-x: hidden; /* Prevent horizontal overflow */
-  /* overflow-y: hidden; */
+  overflow-x: hidden;
 }
 
 .image-container {
@@ -45,22 +44,21 @@ body {
 
 .image-container img {
   width: 100%;
-  height: auto; /* Allow the image to maintain its aspect ratio */
-  max-height: 100%; /* Ensure the image fits within its container */
-  object-fit: contain; /* Preserve aspect ratio while fitting the entire image */
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
 }
 
-/* Adjust height for larger screens */
 @media (min-width: 640px) {
   .navbar {
-    height: 6rem; /* Adjust height for medium-sized screens */
-    padding-top: 1.5rem; /* Add space between NavLinks and top of navbar */
+    height: 6rem;
+    padding-top: 1.5rem;
   }
 }
 
 @media (min-width: 1024px) {
   .navbar {
-    height: 4rem; /* Adjust height for larger screens */
-    padding-top: 1rem; /* Add more space between NavLinks and top of navbar */
+    height: 4rem;
+    padding-top: 1rem;
   }
 }
