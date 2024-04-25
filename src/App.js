@@ -9,12 +9,11 @@ const RevealOnScroll = ({ children }) => {
     const scrollObserver = new IntersectionObserver(
       ([entry]) => {
         setIsVisible(entry.isIntersecting);
-        // Ensure observer keeps observing until component unmounts
         if (entry.isIntersecting) {
           entry.target.dataset.visited = "true";
         }
       },
-      { threshold: 0.5 } // Trigger when at least 50% of the component is visible
+      { threshold: 0.5 }
     );
 
     scrollObserver.observe(ref.current);
@@ -61,33 +60,39 @@ const RevealOnScroll = ({ children }) => {
 };
 
 const App = () => {
-  const sectionBackgrounds = ["bg-blue-600", "bg-blue-800"];
+  const sectionBackgrounds = ["bg-blue-950", "bg-blue-900"];
 
   return (
-    <div>
+    <>
+      {/* Logo- section 1 */}
       <div
         id="one"
-        className={`h-screen flex justify-center items-center ${sectionBackgrounds[1]}`}
+        className={`h-screen flex justify-center items-center text-center ${sectionBackgrounds[1]}`}
       >
         <RevealOnScroll>
           <img
             src="https://i.ibb.co/35XRn1R/Untitled-design-2.png"
             id="image"
-            className="text-7xl font-bold mb-8 text-green fade-in w-108 h-108"
+            className="mb-8 fade-in w-108 h-108 px-4"
           />
         </RevealOnScroll>
       </div>
+
+      {/* Image and about- section 2 */}
       <div
         id="two"
         className={`h-screen flex justify-center items-center text-center ${sectionBackgrounds[0]}`}
       >
         <RevealOnScroll>
-          <div className="p-6 md:p-10">
+          <div className="mx-4">
             <img
               src="https://i.ibb.co/RgBQKph/image1.jpg"
-              className="mx-auto"
+              className="mx-auto px-4 mb-8 fade-in w-108 h-108 rounded-full"
             />
-            <p className="text-3xl mt-10" id="about">
+            <p
+              className="mt-4 md:mt-4 lg:mt-4 text-1xl px-4 mb-4 md:text-1xl lg:text-2xl md:px-6 lg:px-6"
+              id="about"
+            >
               Welcome to Pale Moon Brewing in Arcata, CA! <br /> <br />
               Crafting quality brews in the heart of Arcata, Pale Moon Brewing
               is your destination for small-batch excellence. From our crisp
@@ -99,24 +104,30 @@ const App = () => {
           </div>
         </RevealOnScroll>
       </div>
+
+      {/* Map- section 3 */}
       <div
         id="three"
         className={`h-screen flex justify-center items-center text-center ${sectionBackgrounds[1]}`}
       >
         <RevealOnScroll>
-          <div className="p-4 md:p-10">
+          <div className="p-4">
             <Map />
-            <p className="text-3xl mt-10">600 F St Suite 7, Arcata, CA 95521</p>
+            <p className="text-1xl pt-6 lg:pt-6 md:text-1xl lg:text-2xl">
+              600 F St. Suite 7, Arcata, CA 95521
+            </p>
           </div>
         </RevealOnScroll>
       </div>
+
+      {/* Hours- section 4 */}
       <div
         id="four"
         className={`h-screen flex justify-center items-center text-center ${sectionBackgrounds[0]}`}
       >
         <RevealOnScroll>
-          <div className="p-4 md:p-10">
-            <p className="text-3xl mt-10">
+          <div className="p-4">
+            <p className="text-2xl mt-10 md:text-1xl lg:text-2xl">
               Monday: Closed
               <br />
               Tuesday: Closed
@@ -134,12 +145,14 @@ const App = () => {
           </div>
         </RevealOnScroll>
       </div>
+
+      {/* Contact- section 5 */}
       <div
         id="five"
         className={`h-screen flex justify-center items-center text-center ${sectionBackgrounds[1]}`}
       >
         <RevealOnScroll>
-          <div className="p-4 md:p-10">
+          <div className="p-4">
             <p className="text-3xl mt-10" id="contact">
               <div style={{ whiteSpace: "nowrap" }}>
                 {/* Phone number */}
@@ -201,7 +214,7 @@ const App = () => {
           </div>
         </RevealOnScroll>
       </div>
-    </div>
+    </>
   );
 };
 
