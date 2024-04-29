@@ -67,11 +67,11 @@ const App = () => {
       {/* Logo */}
       <div
         id="one"
-        className={`h-screen flex justify-center items-center text-center ${sectionBackgrounds[1]}`}
+        className={`h-screen flex justify-center items-center text-center ${sectionBackgrounds[0]}`}
       >
         <RevealOnScroll>
           <img
-            src="https://i.ibb.co/35XRn1R/Untitled-design-2.png"
+            src="https://i.ibb.co/D5YKTLm/Untitled-design-9.png"
             id="image"
             className="mb-8 fade-in w-108 h-108 px-4"
           />
@@ -81,7 +81,7 @@ const App = () => {
       {/* Image and about */}
       <div
         id="two"
-        className={`h-screen flex justify-center items-center text-center ${sectionBackgrounds[0]}`}
+        className={`h-screen flex justify-center items-center text-center ${sectionBackgrounds[1]}`}
       >
         <RevealOnScroll>
           <div className="p-4">
@@ -108,7 +108,7 @@ const App = () => {
       {/* Map and address */}
       <div
         id="three"
-        className={`h-screen flex justify-center items-center text-center ${sectionBackgrounds[1]}`}
+        className={`h-screen flex justify-center items-center text-center ${sectionBackgrounds[0]}`}
       >
         <RevealOnScroll>
           <div className="p-4">
@@ -123,7 +123,7 @@ const App = () => {
       {/* Hours */}
       <div
         id="four"
-        className={`h-screen flex justify-center items-center text-center ${sectionBackgrounds[0]}`}
+        className={`h-screen flex justify-center items-center text-center ${sectionBackgrounds[1]}`}
       >
         <RevealOnScroll>
           <div className="p-4">
@@ -149,7 +149,7 @@ const App = () => {
       {/* Contact */}
       <div
         id="five"
-        className={`h-screen flex justify-center items-center text-center ${sectionBackgrounds[1]}`}
+        className={`h-screen flex justify-center items-center text-center ${sectionBackgrounds[0]}`}
       >
         <RevealOnScroll>
           <div className="p-4">
@@ -216,7 +216,7 @@ const App = () => {
       </div>
 
       {/* Footer */}
-      <div className={`flex flex-wrap ${sectionBackgrounds[0]}`}>
+      <div className={`flex flex-wrap ${sectionBackgrounds[1]}`}>
         <div className="w-full lg:w-2/5"></div>
         <div className="mt-6 mb-6 w-full md:w-1/2 lg:w-1/5 text-center pb-2 text-sm">
           @ Meaghan Sharrard 2024
