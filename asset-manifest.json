@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/palemoon/static/css/main.0aa37562.css",
-    "main.js": "/palemoon/static/js/main.6d24cdea.js",
+    "main.js": "/palemoon/static/js/main.d57daf6d.js",
     "index.html": "/palemoon/index.html",
     "main.0aa37562.css.map": "/palemoon/static/css/main.0aa37562.css.map",
-    "main.6d24cdea.js.map": "/palemoon/static/js/main.6d24cdea.js.map"
+    "main.d57daf6d.js.map": "/palemoon/static/js/main.d57daf6d.js.map"
   },
   "entrypoints": [
     "static/css/main.0aa37562.css",
-    "static/js/main.6d24cdea.js"
+    "static/js/main.d57daf6d.js"
   ]
 }
