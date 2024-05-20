@@ -97,8 +97,7 @@ const App = () => {
               Crafting quality brews in the heart of Arcata, Pale Moon Brewing
               is your destination for small-batch excellence. From our crisp
               IPAs to our smooth stouts, each pour is a testament to our passion
-              for the craft. Join us in our cozy taproom for a taste of Arcata's
-              finest brews. Cheers to good times and great beer at Pale Moon
+              for the craft. Cheers to good times and great beer at Pale Moon
               Brewing!
             </p>
           </div>
