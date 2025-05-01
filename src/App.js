@@ -131,15 +131,15 @@ const App = () => {
               <br />
               Tuesday: Closed
               <br />
-              Wednesday: Closed
+              Wednesday: 3-7 PM
               <br />
               Thursday: 2–8 PM
               <br />
               Friday: 2–9 PM
               <br />
-              Saturday: 12–9 PM
+              Saturday: 1–9 PM
               <br />
-              Sunday: 12–8 PM
+              Sunday: Closed
             </p>
           </div>
         </RevealOnScroll>
